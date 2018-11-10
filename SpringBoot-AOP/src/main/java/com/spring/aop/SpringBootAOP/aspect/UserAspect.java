@@ -14,12 +14,12 @@ import org.springframework.context.annotation.Configuration;
 
 @Aspect
 @Configuration
-public class BeforeAspect {
+public class UserAspect {
 
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	// first * any class second any method (..) irrespective of no of args
-	@Before("execution(* com.spring.aop.SpringBootAOP.business.*.*(..))")
+	@Before("com.spring.aop.SpringBootAOP.aspect.CommonConfig.dataLayerExecution()")
 	public void before(JoinPoint joinPoint) {
 		logger.info("before asopect {}", joinPoint);
 	}
