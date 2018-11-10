@@ -14,7 +14,7 @@ public class BooksController {
 	public List<Book> allBooks() {
 //		List<Book> books = new ArrayList<Book>();
 	
-		return Arrays.asList(new Book(1l, "Bookname", "BookAuthor"));
+		return Arrays.asList(new Book(1l, "Bookname11", "BookAuthor"));
 		
 	}
 }
